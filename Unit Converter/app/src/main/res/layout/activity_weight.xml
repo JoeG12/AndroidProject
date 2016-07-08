@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a weight to convert"
+        android:inputType="numberDecimal"
+        android:textColor="#FFF"
+        android:layout_below="@+id/txtWeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="112dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Weight"
+        android:textSize="24sp"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnPounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Pounds"
+        android:textColor="#FFF"
+        android:background="#00e600"
+        android:width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editWeight"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnKilograms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Kilograms"
+        android:textColor="#FFF"
+        android:background="#00e600"
+        android:width="300dp"
+        android:layout_below="@+id/btnPounds"
+        android:layout_alignLeft="@+id/btnPounds"
+        android:layout_alignStart="@+id/btnPounds"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

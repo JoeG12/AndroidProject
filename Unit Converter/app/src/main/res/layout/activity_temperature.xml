@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/editTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a temperature to convert"
+        android:inputType="numberDecimal"
+        android:textColor="#FFF"
+        android:layout_below="@+id/txtTemperature"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="122dp" />
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Temperature"
+        android:textSize="24sp"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnCelisus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Celisus"
+        android:textColor="#FFF"
+        android:background="#252fe4"
+        android:width="300dp"
+        android:layout_below="@+id/editTemperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnFarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Farenheit "
+        android:textColor="#FFF"
+        android:background="#252fe4"
+        android:width="300dp"
+        android:layout_below="@+id/btnCelisus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
